@@ -1,7 +1,7 @@
 # School project: Ocha - A traditional Japanese tea farm
 
 This repository is the backbone for the second project in the first semester of Interaction Design at Fagskolen Kristiania. 
-The goal for this respository was make our first, ideal website using HTML and CSS. Both versions for desktop and mobile,
+The goal for this project was make our first, ideal website using HTML and CSS. Both versions for desktop and mobile,
 was first made visually using Figma, before initializing the process with writing the code in VS Code. 
 
 
