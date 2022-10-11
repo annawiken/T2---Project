@@ -4,6 +4,7 @@
 @media screen {
 }
 
+
 html {
     font-size: 20px;
 }
@@ -19,16 +20,19 @@ header {
     border-bottom: 2px solid width #583A3E;;
 }
 
+
 header nav {
     width: 100%;
     display: none;
 }
+
 
 .hamburger {
     display: block;
     width: 6.25rem;
     height: auto;
 }
+
 
 /* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 900px: */
 @media screen and (min-width: 900px) { 
@@ -56,11 +60,13 @@ header nav {
     }
 }
 
+
 header nav ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
 }
+
 
 header hr {
     width: 100%;
@@ -92,21 +98,41 @@ footer {
 
 
 .top-menu {
-    font-size: 30px;
+    font-size: 45px;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
 }
 
 
-.intro-text {
-    font-size: 35px;
+.intro-text-1 {
+    font-size: 50px;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
+    width: 1300px;
+    height: 140px;
+    padding: 2.5rem 10rem 8rem 10rem;
+    display: block;
+    margin-right: 40rem;
+    line-height: 1.7;
+}
+
+
+.intro-text-2 {
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+    color: #583A3E;
+    text-align: right;
+    width: 1600px;
+    height: 250px;
+    padding: 8rem 10rem 2.5rem 10rem;
+    display: block;
+    margin-left: 40rem;
+    line-height: 1.7;
 }
 
 
 .link-text {
-    font-size: 50px;
+    font-size: 90px;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
     padding: 10rem 10rem 10rem 10rem;
@@ -117,15 +143,16 @@ footer {
     border-radius: 50px 50px 50px 50px;
     width: 455;
     height: 566;
-    margin-right: 10rem;
+    display: block;
 }
 
+
 .image-brewing-techniques {
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 50px 50px 50px;
     width: 630;
     height: 714;
     display: block;
-    margin-left: auto;
+    margin-left: 90rem;
 }
 
 
@@ -138,11 +165,11 @@ footer {
 
 
 .image-tours-tastings {
-    border-radius: 50px 0px 0px 50px;
-    width: 694;
-    height: 644;
+    border-radius: 50px 50px 50px 50px;
+    width: 300;
+    height: 300;
     display: block;
-    margin-left: auto;
+    margin-left: 90rem;
 }
 
 
