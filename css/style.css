@@ -17,6 +17,8 @@ header {
     align-items: center;
     height: 8rem;
     border-bottom: 2px solid #583A3E;;
+
+    
 }
 
 header nav {
@@ -26,22 +28,27 @@ header nav {
 
 .hamburger {
     display: block;
+    width: 6.25rem;
+    height: auto;
 }
 
-@media screen and (min-width: 900px) { /* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 900px */
+/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 900px: */
+@media screen and (min-width: 900px) { 
     header {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
-        height: 18rem;
+        height: 18rem; /* Høyde fra toppen av nettleseren */
+
     }
     header nav {
-        display: block;
+        display: block; /* vises i mobilversjon */
     }
+
     .hamburger {
-        display: none;
+        display: none; /* vises ikke i mobilversjon */
     }
 }
 
