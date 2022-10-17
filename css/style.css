@@ -4,9 +4,9 @@
 @media screen {
 }
 
-
+/* 20px = 1rem: */
 html {
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 
@@ -15,9 +15,10 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 4rem;
     align-items: center;
-    height: 8rem;
-    border-bottom: 2px solid width #583A3E;;
+    height: 5rem;
+    transform: translateY(4rem);
 }
 
 
@@ -30,12 +31,12 @@ header nav {
 .hamburger {
     display: block;
     width: 6.25rem;
-    height: auto;
+    height: 4rem;
 }
 
 
 /* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 900px: */
-@media screen and (min-width: 900px) { 
+@media screen and (min-width: 700px) { 
     header {
         display: flex;
         flex-direction: column;
@@ -46,12 +47,22 @@ header nav {
 
     }
     header nav {
-        display: block; /* vises i mobilversjon */
+        display: block; /* block betyr at den vises i desktop, men ikke mobil */
+    }
+
+    header hr {
+        display: block;
     }
 
     .hamburger {
-        display: none; /* vises ikke i mobilversjon */
+        display: none; /* none betyr at den ikke vises i dekstop, men på mobil */
     }
+
+    /*.intro-text-1 {
+    }
+    
+    .intro-text-2 {
+    }*/
 
     .footer-text {
         font-size: 16px;
@@ -61,25 +72,23 @@ header nav {
 }
 
 
+
 header nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5rem;
+    transform: translateY(2rem);
 }
 
 
 header hr {
+    display: block;
     width: 100%;
     color: #583A3E;
-    transform: translateY(-3.24rem);
+    background-color: #583A3E; 
 }
 
-/*
-.logo {
-    display: flex;
-    justify-content: center;
-  
-} */
 
 div { 
     display: block;
@@ -98,41 +107,42 @@ footer {
 
 
 .top-menu {
-    font-size: 45px;
+    font-size: 1.25rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
 }
 
 
 .intro-text-1 {
-    font-size: 50px;
+    font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    width: 1300px;
-    height: 140px;
+    width: 50rem;
+    height: 5rem;
     padding: 2.5rem 10rem 8rem 10rem;
     display: block;
-    margin-right: 40rem;
+    margin-top: 10rem;
     line-height: 1.7;
+    transform: translateX(2rem);
 }
 
 
 .intro-text-2 {
-    font-size: 50px;
+    font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
     text-align: right;
-    width: 1600px;
-    height: 250px;
+    width: 50rem;
     padding: 8rem 10rem 2.5rem 10rem;
     display: block;
-    margin-left: 40rem;
     line-height: 1.7;
+    transform: translatex(19rem);
+
 }
 
 
 .link-text {
-    font-size: 90px;
+    font-size: 3rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
     padding: 10rem 10rem 10rem 10rem;
@@ -140,48 +150,53 @@ footer {
 
 
 .image-our-teas {
-    border-radius: 50px 50px 50px 50px;
-    width: 455;
-    height: 566;
+    margin-top: 10rem;
+    margin-left: 7.5rem;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 22rem;
+    height: 27rem;
     display: block;
 }
 
 
 .image-brewing-techniques {
-    border-radius: 50px 50px 50px 50px;
-    width: 630;
-    height: 714;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 25rem;
+    height: 29rem;
     display: block;
-    margin-left: 90rem;
+    margin-left: 40rem;
 }
 
 
 .image-our-history {
-    border-radius: 0px 50px 50px 0px;
-    width: 599;
-    height: 862;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 24rem;
+    height: 35rem;
+    margin-left: 5rem;
     display: block;
 }
 
 
 .image-tours-tastings {
-    border-radius: 50px 50px 50px 50px;
-    width: 300;
-    height: 300;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 30rem;
+    height: 30rem;
     display: block;
-    margin-left: 90rem;
+    margin-left: 35rem;
 }
 
 
 .image-retailers {
-    border-radius: 0px 50px 50px 0px;
-    width: 810;
-    height: 770;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    margin-left: 5rem;
 }
 
 
 .footer-text {
-    font-size: 16px;
+    font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
 }
