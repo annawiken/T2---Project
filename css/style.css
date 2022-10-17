@@ -17,8 +17,8 @@ header {
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
-    height: 5rem;
-    transform: translateY(4rem);
+    height: 3rem;
+    transform: translateY(7rem);
 }
 
 
@@ -35,7 +35,7 @@ header nav {
 }
 
 
-/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 900px: */
+/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 700px: */
 @media screen and (min-width: 700px) { 
     header {
         display: flex;
@@ -43,11 +43,18 @@ header nav {
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
-        height: 18rem; /* Høyde fra toppen av nettleseren */
+        height: 8rem; /* Høyde fra toppen av nettleseren */
 
     }
+
+    .logo {
+        display: block;
+        transform: translateY(3rem);
+    }
+
     header nav {
         display: block; /* block betyr at den vises i desktop, men ikke mobil */
+        transform: translateY(-0.5rem);
     }
 
     header hr {
@@ -65,7 +72,7 @@ header nav {
     }*/
 
     .footer-text {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: 'Lato', sans-serif;
         color: #FFFFFF;
     }
@@ -78,26 +85,30 @@ header nav ul {
     list-style: none;
     justify-content: center;
     gap: 5rem;
-    transform: translateY(2rem);
+    transform: translateY(3rem);
 }
 
 
 header hr {
     display: block;
-    width: 100%;
-    color: #583A3E;
-    background-color: #583A3E; 
+    width: 90%;
+    border: 0.075rem solid #724c51;
 }
 
 
 div { 
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
 } 
 
 
 body {
     background-image: linear-gradient(#FFFFFF, #F7DDAD, #FFD88F);
+    
 }
 
 
@@ -123,7 +134,7 @@ footer {
     display: block;
     margin-top: 10rem;
     line-height: 1.7;
-    transform: translateX(2rem);
+    transform: translate(2rem, 8rem);
 }
 
 
@@ -136,7 +147,7 @@ footer {
     padding: 8rem 10rem 2.5rem 10rem;
     display: block;
     line-height: 1.7;
-    transform: translatex(19rem);
+    transform: translate(19rem, 4rem);
 
 }
 
@@ -145,26 +156,61 @@ footer {
     font-size: 3rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    padding: 10rem 10rem 10rem 10rem;
+    
 }
+
+.footer-text {
+    font-size: 3rem;
+    font-family: 'Barlow', sans-serif;
+    color: #14b062;
+}
+    
+
+p:hover {
+    color: #301b1b;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    transition: color 3s;
+}
+
 
 
 .image-our-teas {
-    margin-top: 10rem;
-    margin-left: 7.5rem;
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
     width: 22rem;
     height: 27rem;
     display: block;
+    /* Litt gøy med animasjoner:
+    position: relative;
+    animation-name: movein;
+    animation-duration: 3s;  
+    animation-delay: 1s;
+    animation-fill-mode: backwards; */
 }
+
+
+
+/* @keyframes movein {
+    from {
+        bottom: 0rem;
+    }
+
+    to {
+        bottom: 5rem;
+    }
+} */
+
 
 
 .image-brewing-techniques {
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    /* padding: */
     width: 25rem;
     height: 29rem;
     display: block;
-    margin-left: 40rem;
+    margin-right: 5rem;
 }
 
 
@@ -182,7 +228,7 @@ footer {
     width: 30rem;
     height: 30rem;
     display: block;
-    margin-left: 35rem;
+    margin-right: 5rem;
 }
 
 
@@ -192,6 +238,7 @@ footer {
     height: 30rem;
     display: block;
     margin-left: 5rem;
+    margin-bottom: 20rem;
 }
 
 
@@ -199,4 +246,28 @@ footer {
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 8rem;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    align-items: center;
+    height: 30rem;
+}
+
+
+
+footer nav ul {
+    display: flex;
+    list-style: none; /* Får ikke til å lage vertikalt her */
 }
