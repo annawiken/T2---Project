@@ -70,32 +70,33 @@ body {
 }
 
 
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20rem 2rem 0 2rem;
+    gap: 3rem;
+    max-width: 50rem;
+}
+
 
 .intro-text-1 {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
     max-width: 30rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 30rem;
-    margin: 20rem 8rem 4rem 10rem;
     line-height: 2.2rem;
+    align-self: flex-start;
 }
 
 
 .intro-text-2 {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
-    text-align: end;
+    text-align: start;
     color: #583A3E;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     max-width: 30rem;
-    margin: 5rem 8rem 4rem 10rem;
     line-height: 2.2rem;
+    align-self: flex-end;
 }
 
 
@@ -103,13 +104,16 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 65rem;
-    margin: 15rem 8rem 4rem 10rem;
+    max-width: 55rem;
+    width: 90%;
+    margin: 10rem 8rem 4rem 10rem;
 }
 
 
 .flex-reverse {
     flex-direction: row-reverse;
+    max-width: 55rem;
+
 }
 
 
@@ -196,6 +200,10 @@ body {
     width: 27rem;
     height: 27rem;
     display: block;
+}
+
+.whitespace {
+    padding: 7rem;
 }
 
 
@@ -309,5 +317,15 @@ footer .footer-nav li:hover {
         font-family: 'Lato', sans-serif;
         color: #FFFFFF;
     }
+
+    .intro-text-2 {
+        text-align: end;
+    }
+
+    .flex-column {
+        margin: 20rem auto 0 auto;
+
+    }
+    
 
 }
