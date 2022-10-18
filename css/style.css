@@ -5,9 +5,9 @@
 }
 
 
-/* 20px = 1rem: */
 html {
-    font-size: 20px; 
+    font-size: 20px; /* 20px = 1rem: */
+    scroll-behavior: smooth; 
 }
 
 
@@ -29,14 +29,6 @@ header nav {
 }
 
 
-.hamburger {
-    display: block;
-    width: 6.25rem;
-    height: 4rem;
-    width: auto;
-}
-
-
 .logo {
     display: flex;
     flex-direction: row;
@@ -46,47 +38,11 @@ header nav {
 }
 
 
-/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 700px: */
-@media screen and (min-width: 700px) { 
-    header {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        height: 8rem; /* Høyde fra toppen av nettleseren */
-
-    }
-
-    .logo {
-        display: block;
-        transform: translateY(3rem);
-    }
-
-    header nav {
-        display: block; /* block betyr at den vises i desktop, men ikke mobil */
-        transform: translateY(-0.5rem);
-    }
-
-    header hr {
-        display: block;
-    }
-
-    .hamburger {
-        display: none; /* none betyr at den ikke vises i dekstop, men på mobil */
-    }
-
-    /*.intro-text-1 {
-    }
-    
-    .intro-text-2 {
-    }*/
-
-    .footer-text {
-        font-size: 1rem;
-        font-family: 'Lato', sans-serif;
-        color: #FFFFFF;
-    }
+.hamburger {
+    display: block;
+    width: 6.25rem;
+    height: 4rem;
+    width: auto;
 }
 
 
@@ -96,6 +52,9 @@ header nav ul {
     justify-content: center;
     gap: 5rem;
     transform: translateY(3rem);
+    font-size: 1.25rem;
+    font-family: 'Barlow', sans-serif;
+    color: #583A3E;
 }
 
 
@@ -108,45 +67,35 @@ header hr {
 
 body {
     background-image: linear-gradient(#FFFFFF, #F7DDAD, #FFD88F);
-    
 }
 
-
-.top-menu {
-    font-size: 1.25rem;
-    font-family: 'Barlow', sans-serif;
-    color: #583A3E;
-}
 
 
 .intro-text-1 {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    /* width: 50rem;
-    height: 5rem;
-    padding: 2.5rem 10rem 8rem 10rem; 
-    display: block */
+    max-width: 30rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10rem;
-    line-height: 1.7;
-    transform: translate(2rem, 8rem);
+    max-width: 30rem;
+    margin: 20rem 8rem 4rem 10rem;
+    line-height: 2.2rem;
 }
 
 
 .intro-text-2 {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
+    text-align: end;
     color: #583A3E;
-    text-align: right;
-    width: 50rem;
-    padding: 8rem 10rem 2.5rem 10rem;
-    display: block;
-    line-height: 1.7;
-    transform: translate(19rem, 4rem);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    max-width: 30rem;
+    margin: 5rem 8rem 4rem 10rem;
+    line-height: 2.2rem;
 }
 
 
@@ -171,18 +120,18 @@ body {
 
 
 .link-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
     width: auto;
     align-self: center;
     align-content: center;
     margin: 2rem auto;
-    line-height: 4rem;
+    line-height: 3.2rem;
 }
 
 
-p:hover {
+.link-text:hover {
     color: #301b1b;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
@@ -191,11 +140,12 @@ p:hover {
 
 
 .image-our-teas {
-    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2.5rem 2.5rem;
     width: 22rem;
     height: 27rem;
     display: block;
-    /* Litt gøy med animasjoner:
+
+    /* Fun with animations - testing:
     position: relative;
     animation-name: movein;
     animation-duration: 3s;  
@@ -204,7 +154,8 @@ p:hover {
 }
 
 
-/* @keyframes movein {
+/* Fun with animations - testing: 
+@keyframes movein {
     from {
         bottom: 0rem;
     }
@@ -217,8 +168,7 @@ p:hover {
 
 
 .image-brewing-techniques {
-    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-    /* padding: */
+    border-radius: 2.5rem 2.5rem;
     width: 25rem;
     height: 29rem;
     display: block;
@@ -226,7 +176,7 @@ p:hover {
 
 
 .image-our-history {
-    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2.5rem 2.5rem;
     width: 24rem;
     height: 35rem;
     display: block;
@@ -234,7 +184,7 @@ p:hover {
 
 
 .image-tours-tastings {
-    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2.5rem 2.5rem;
     width: 27rem;
     height: 27rem;
     display: block;
@@ -242,12 +192,11 @@ p:hover {
 
 
 .image-retailers {
-    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2.5rem 2.5rem;
     width: 27rem;
     height: 27rem;
     display: block;
 }
-
 
 
 footer {
@@ -259,11 +208,11 @@ footer {
  } 
 
  
-.footer-elements {
+footer .footer-elements {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5rem; 
+    gap: 8rem; 
     margin-top: 5rem;
     line-height: 1.5rem;
 }
@@ -274,29 +223,45 @@ footer .some-logos {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 
-footer .footer-text {
-    font-size: 0.8rem;
+footer .footer-text1 {
     font-family: 'Lato', sans-serif;
     color: white;
+    font-size: 0.9rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 5rem;
-    padding-bottom: 3re;
+    padding-bottom: 2rem;
+}
+
+
+footer .footer-text2 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 13rem;
+    padding-bottom: 6rem;
 }
 
 
 footer .footer-nav {
     list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
-    color: white;
+    padding-bottom: 4rem;
 }
 
 
@@ -304,4 +269,45 @@ footer .footer-nav li:hover {
     color: white;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
+}
+
+
+
+/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 700px: */
+
+@media screen and (min-width: 700px) { 
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem; /* Høyde fra toppen av nettleseren */
+    }
+
+    .logo {
+        display: block;
+        transform: translateY(3rem);
+    }
+
+    header nav {
+        display: block; /* block betyr at den vises i desktop, men ikke mobil */
+        transform: translateY(-0.5rem);
+    }
+
+    header hr {
+        display: block;
+    }
+
+    .hamburger {
+        display: none; /* none betyr at den ikke vises i dekstop, men på mobil */
+    }
+
+
+    .footer-text {
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        color: #FFFFFF;
+    }
+
 }
