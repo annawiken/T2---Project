@@ -4,6 +4,7 @@
 @media screen {
 }
 
+
 /* 20px = 1rem: */
 html {
     font-size: 20px; 
@@ -17,7 +18,7 @@ header {
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
-    height: 3rem;
+    height: 3.5rem;
     transform: translateY(7rem);
 }
 
@@ -32,6 +33,16 @@ header nav {
     display: block;
     width: 6.25rem;
     height: 4rem;
+    width: auto;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 4rem;
 }
 
 
@@ -79,7 +90,6 @@ header nav {
 }
 
 
-
 header nav ul {
     display: flex;
     list-style: none;
@@ -96,24 +106,9 @@ header hr {
 }
 
 
-div { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 4rem;
-    align-items: center;
-} 
-
-
 body {
     background-image: linear-gradient(#FFFFFF, #F7DDAD, #FFD88F);
     
-}
-
-
-footer {
-    background-color: #583A3E;
 }
 
 
@@ -128,10 +123,14 @@ footer {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    width: 50rem;
+    /* width: 50rem;
     height: 5rem;
-    padding: 2.5rem 10rem 8rem 10rem;
-    display: block;
+    padding: 2.5rem 10rem 8rem 10rem; 
+    display: block */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 10rem;
     line-height: 1.7;
     transform: translate(2rem, 8rem);
@@ -148,7 +147,26 @@ footer {
     display: block;
     line-height: 1.7;
     transform: translate(19rem, 4rem);
+}
 
+
+.body-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 65rem;
+    margin: 15rem 8rem 4rem 10rem;
+}
+
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+
+.body-page img {
+    width: 22rem;
+    height: auto;
 }
 
 
@@ -156,15 +174,13 @@ footer {
     font-size: 3rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    
+    width: auto;
+    align-self: center;
+    align-content: center;
+    margin: 2rem auto;
+    line-height: 4rem;
 }
 
-.footer-text {
-    font-size: 3rem;
-    font-family: 'Barlow', sans-serif;
-    color: #14b062;
-}
-    
 
 p:hover {
     color: #301b1b;
@@ -174,11 +190,8 @@ p:hover {
 }
 
 
-
 .image-our-teas {
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-    margin-top: 10rem;
-    margin-left: 5rem;
     width: 22rem;
     height: 27rem;
     display: block;
@@ -189,7 +202,6 @@ p:hover {
     animation-delay: 1s;
     animation-fill-mode: backwards; */
 }
-
 
 
 /* @keyframes movein {
@@ -210,7 +222,6 @@ p:hover {
     width: 25rem;
     height: 29rem;
     display: block;
-    margin-right: 5rem;
 }
 
 
@@ -218,7 +229,6 @@ p:hover {
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
     width: 24rem;
     height: 35rem;
-    margin-left: 5rem;
     display: block;
 }
 
@@ -228,7 +238,6 @@ p:hover {
     width: 27rem;
     height: 27rem;
     display: block;
-    margin-right: 5rem;
 }
 
 
@@ -237,37 +246,62 @@ p:hover {
     width: 27rem;
     height: 27rem;
     display: block;
-    margin-left: 5rem;
-    margin-bottom: 20rem;
-}
-
-
-.footer-text {
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    height: 8rem;
 }
 
 
 
 footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#583A3E;
+ } 
+
+ 
+.footer-elements {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    align-items: center;
-    height: 30rem;
+    justify-content: center;
+    gap: 5rem; 
+    margin-top: 5rem;
+    line-height: 1.5rem;
 }
 
 
-
-footer nav ul {
+footer .some-logos {
     display: flex;
-    list-style: none; /* Får ikke til å lage vertikalt her */
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+footer .footer-text {
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 3re;
+}
+
+
+footer .footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+footer .footer-nav li:hover {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
 }
