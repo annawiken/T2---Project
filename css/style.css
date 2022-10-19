@@ -69,13 +69,6 @@ header nav ul li:hover {
 }
 
 
-header hr {
-    display: block;
-    width: 90%;
-    border: 0.075rem solid #724c51;
-}
-
-
 
 /* Styling body elements */ 
 
@@ -123,8 +116,6 @@ body {
     width: 90%;
     margin: 6rem 1rem 1rem 1.8rem; 
 }
-
-
 
 
 .flex-reverse {
@@ -307,6 +298,7 @@ footer .footer-nav li:hover {
     .logo {
         display: block;
         transform: translateY(3rem);
+        padding-left: 0rem;
     }
 
 
@@ -394,4 +386,9 @@ footer .footer-nav li:hover {
         line-height: 3.2rem;
     }
     
+    header hr {
+        display: block;
+        width: 90%;
+        border: 0.075rem solid #724c51;
+    }
 }
