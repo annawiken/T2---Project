@@ -1,15 +1,19 @@
 /* Importing selected fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap');
 
+/* Enabling CSS @media Rule to make both desktop and mobile version in same file */
 @media screen {
 }
 
-
+/* Using rem for better element scaling. 20px = 1 rem */
 html {
-    font-size: 20px; /* 20px = 1rem: */
+    font-size: 20px;
     scroll-behavior: smooth; 
 }
 
+
+/* Mobile version */
+/* Styling header elements */
 
 header {
     display: flex;
@@ -64,6 +68,9 @@ header hr {
     border: 0.075rem solid #724c51;
 }
 
+
+
+/* Styling body elements */ 
 
 body {
     background-image: linear-gradient(#FFFFFF, #F7DDAD, #FFD88F);
@@ -148,27 +155,7 @@ body {
     width: 22rem;
     height: 27rem;
     display: block;
-
-    /* Fun with animations - testing:
-    position: relative;
-    animation-name: movein;
-    animation-duration: 3s;  
-    animation-delay: 1s;
-    animation-fill-mode: backwards; */
 }
-
-
-/* Fun with animations - testing: 
-@keyframes movein {
-    from {
-        bottom: 0rem;
-    }
-
-    to {
-        bottom: 5rem;
-    }
-} */
-
 
 
 .image-brewing-techniques {
@@ -206,6 +193,8 @@ body {
     padding: 7rem;
 }
 
+
+/* Styling footer elements */
 
 footer {
     position: static;
@@ -281,7 +270,8 @@ footer .footer-nav li:hover {
 
 
 
-/* Dette er det som vil vises i desktop, alt utenfor vises i mobilversjon over 700px: */
+/* Desktop version */
+/* Using CSS @media Rule to hide/show elements when screen is more than 700px wide */
 
 @media screen and (min-width: 700px) { 
     header {
@@ -293,19 +283,23 @@ footer .footer-nav li:hover {
         height: 8rem; /* Høyde fra toppen av nettleseren */
     }
 
+
     .logo {
         display: block;
         transform: translateY(3rem);
     }
+
 
     header nav {
         display: block; /* block betyr at den vises i desktop, men ikke mobil */
         transform: translateY(-0.5rem);
     }
 
+
     header hr {
         display: block;
     }
+
 
     .hamburger {
         display: none; /* none betyr at den ikke vises i dekstop, men på mobil */
@@ -318,14 +312,13 @@ footer .footer-nav li:hover {
         color: #FFFFFF;
     }
 
+
     .intro-text-2 {
         text-align: end;
     }
 
+
     .flex-column {
         margin: 20rem auto 0 auto;
-
     }
-    
-
 }
