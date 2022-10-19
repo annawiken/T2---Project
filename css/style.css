@@ -61,6 +61,13 @@ header nav ul {
     color: #583A3E;
 }
 
+header nav ul li:hover {
+    color: #301b1b;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    transition: color 1s;
+}
+
 
 header hr {
     display: block;
@@ -77,12 +84,13 @@ body {
 }
 
 
-.flex-column {
+/* controls positioning of intro-text-1 and intro-text-2 */
+.flex-column { 
     display: flex;
     flex-flow: column nowrap;
     margin: 20rem 2rem 0 2rem;
     gap: 3rem;
-    max-width: 50rem;
+    max-width: 55rem;
 }
 
 
@@ -106,26 +114,27 @@ body {
     align-self: flex-end;
 }
 
-
+/* controls positioning of images and link-text elements in body */
 .body-page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 55rem;
+    max-width: 50rem;
     width: 90%;
-    margin: 10rem 8rem 4rem 10rem;
+    margin: 6rem 1rem 1rem 1.8rem; 
 }
+
+
 
 
 .flex-reverse {
     flex-direction: row-reverse;
-    max-width: 55rem;
-
+    max-width: 50rem;
 }
 
 
 .body-page img {
-    width: 22rem;
+    width: 15rem;
     height: auto;
 }
 
@@ -134,10 +143,11 @@ body {
     font-size: 2.5rem;
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
-    width: auto;
+    width: 40rem;
     align-self: center;
     align-content: center;
-    margin: 2rem auto;
+    text-align: center;
+    margin: 2rem 2rem 2rem 2rem;
     line-height: 3.2rem;
 }
 
@@ -176,16 +186,16 @@ body {
 
 .image-tours-tastings {
     border-radius: 2.5rem 2.5rem;
-    width: 27rem;
-    height: 27rem;
+    width: 29rem;
+    height: 29rem;
     display: block;
 }
 
 
 .image-retailers {
     border-radius: 2.5rem 2.5rem;
-    width: 27rem;
-    height: 27rem;
+    width: 29rem;
+    height: 29rem;
     display: block;
 }
 
@@ -207,11 +217,12 @@ footer {
  
 footer .footer-elements {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8rem; 
-    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem; 
     line-height: 1.5rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -222,6 +233,7 @@ footer .some-logos {
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -246,7 +258,7 @@ footer .footer-text2 {
     flex-direction: row;
     justify-content: space-around;
     max-width: 13rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -258,7 +270,7 @@ footer .footer-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 4rem;
+   
 }
 
 
@@ -266,6 +278,14 @@ footer .footer-nav li:hover {
     color: white;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
+}
+
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 2rem 0;
 }
 
 
@@ -312,6 +332,23 @@ footer .footer-nav li:hover {
         color: #FFFFFF;
     }
 
+    footer .footer-elements {
+        flex-direction: row;
+        gap: 10rem; 
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+
+    .arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding: 0 2rem 2rem 0;
+    }
+    
+
 
     .intro-text-2 {
         text-align: end;
@@ -321,4 +358,40 @@ footer .footer-nav li:hover {
     .flex-column {
         margin: 20rem auto 0 auto;
     }
+
+
+    .body-page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 55rem;
+        width: 90%;
+        margin: 10rem 8rem 4rem 10rem;
+    }
+    
+    
+    .flex-reverse {
+        flex-direction: row-reverse;
+        max-width: 55rem;
+    
+    }
+    
+    
+    .body-page img {
+        width: 22rem;
+        height: auto;
+    }
+
+
+    .link-text {
+        font-size: 2.5rem;
+        font-family: 'Barlow', sans-serif;
+        color: #583A3E;
+        width: auto;
+        align-self: center;
+        align-content: center;
+        margin: 2rem auto;
+        line-height: 3.2rem;
+    }
+    
 }
