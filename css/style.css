@@ -26,12 +26,10 @@ header {
     transform: translateY(7rem);
 }
 
-
 header nav {
     width: 100%;
     display: none;
 }
-
 
 .logo {
     display: flex;
@@ -41,14 +39,12 @@ header nav {
     padding-left: 4rem;
 }
 
-
 .hamburger {
     display: block;
     width: 6.25rem;
     height: 4rem;
     width: auto;
 }
-
 
 header nav ul {
     display: flex;
@@ -60,7 +56,6 @@ header nav ul {
     font-family: 'Barlow', sans-serif;
     color: #583A3E;
 }
-
 
 header nav ul li:hover {
     color: #301b1b;
@@ -76,7 +71,6 @@ body {
     background-image: linear-gradient(#FFFFFF, #F7DDAD, #FFD88F);
 }
 
-
 /* controls positioning of intro-text-1 and intro-text-2 */
 .flex-column { 
     display: flex;
@@ -86,7 +80,6 @@ body {
     max-width: 55rem;
 }
 
-
 .intro-text-1 {
     font-size: 1.5rem;
     font-family: 'Barlow', sans-serif;
@@ -95,7 +88,6 @@ body {
     line-height: 2.2rem;
     align-self: flex-start;
 }
-
 
 .intro-text-2 {
     font-size: 1.5rem;
@@ -107,7 +99,6 @@ body {
     align-self: flex-end;
 }
 
-
 /* controls positioning of images and link-text elements in body */
 .body-page {
     display: flex;
@@ -118,18 +109,15 @@ body {
     margin: 6rem 1rem 1rem 1.8rem; 
 }
 
-
 .flex-reverse {
     flex-direction: row-reverse;
     max-width: 50rem;
 }
 
-
 .body-page img {
     width: 15rem;
     height: auto;
 }
-
 
 .link-text {
     font-size: 2.5rem;
@@ -143,14 +131,12 @@ body {
     line-height: 3.2rem;
 }
 
-
 .link-text:hover {
     color: #301b1b;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
     transition: color 3s;
 }
-
 
 .image-our-teas {
     border-radius: 2.5rem 2.5rem;
@@ -159,14 +145,12 @@ body {
     display: block;
 }
 
-
 .image-brewing-techniques {
     border-radius: 2.5rem 2.5rem;
     width: 25rem;
     height: 29rem;
     display: block;
 }
-
 
 .image-our-history {
     border-radius: 2.5rem 2.5rem;
@@ -175,7 +159,6 @@ body {
     display: block;
 }
 
-
 .image-tours-tastings {
     border-radius: 2.5rem 2.5rem;
     width: 29rem;
@@ -183,14 +166,12 @@ body {
     display: block;
 }
 
-
 .image-retailers {
     border-radius: 2.5rem 2.5rem;
     width: 29rem;
     height: 29rem;
     display: block;
 }
-
 
 .whitespace {
     padding: 7rem;
@@ -206,7 +187,6 @@ footer {
     width: 100%;
     background-color:#583A3E;
 } 
-
  
 footer .footer-elements {
     display: flex;
@@ -218,7 +198,6 @@ footer .footer-elements {
     padding-bottom: 4rem;
 }
 
-
 footer .some-logos {
     display: flex;
     flex-direction: row;
@@ -228,7 +207,6 @@ footer .some-logos {
     padding-bottom: 1rem;
     margin-bottom: 5rem;
 }
-
 
 footer .footer-text1 {
     font-family: 'Lato', sans-serif;
@@ -240,7 +218,6 @@ footer .footer-text1 {
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
-
 
 footer .footer-text2 {
     font-family: 'Lato', sans-serif;
@@ -254,7 +231,6 @@ footer .footer-text2 {
     padding-bottom: 2rem;
 }
 
-
 footer .footer-nav {
     list-style: none;
     font-family: 'Lato', sans-serif;
@@ -265,13 +241,11 @@ footer .footer-nav {
     justify-content: center;
 }
 
-
 footer .footer-nav li:hover {
     color: white;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
 }
-
 
 .arrow {
     display: flex;
@@ -294,19 +268,16 @@ footer .footer-nav li:hover {
         height: 8rem; /* Høyde fra toppen av nettleseren */
     }
 
-
     .logo {
         display: block;
         transform: translateY(3rem);
         padding-left: 0rem;
     }
 
-
     header nav {
         display: block; 
         transform: translateY(-0.5rem);
     }
-
 
     header hr {
         display: block;
@@ -314,21 +285,17 @@ footer .footer-nav li:hover {
         border: 0.075rem solid #724c51;
     }
 
-
     .hamburger {
         display: none; 
     }
-
 
     .intro-text-2 {
         text-align: end;
     }
 
-
     .flex-column {
         margin: 20rem auto 0 auto;
     }
-
 
     .body-page {
         display: flex;
@@ -339,18 +306,15 @@ footer .footer-nav li:hover {
         margin: 10rem 8rem 4rem 10rem;
     }
     
-    
     .flex-reverse {
         flex-direction: row-reverse;
         max-width: 55rem;
     }
     
-    
     .body-page img {
         width: 22rem;
         height: auto;
     }
-
 
     .link-text {
         font-size: 2.5rem;
@@ -363,13 +327,11 @@ footer .footer-nav li:hover {
         line-height: 3.2rem;
     }
     
-
     .footer-text {
         font-size: 1rem;
         font-family: 'Lato', sans-serif;
         color: #FFFFFF;
     }
-
 
     footer .footer-elements {
         flex-direction: row;
@@ -378,7 +340,6 @@ footer .footer-nav li:hover {
         justify-content: center;
         text-align: left;
     }
-
 
     .arrow {
         display: flex;
