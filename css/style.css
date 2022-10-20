@@ -12,8 +12,7 @@ html {
 }
 
 
-
-/* Mobile version */
+/* MOBILE VERSION */
 /* Styling header elements */
 
 header {
@@ -62,13 +61,13 @@ header nav ul {
     color: #583A3E;
 }
 
+
 header nav ul li:hover {
     color: #301b1b;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     transition: color 1s;
 }
-
 
 
 /* Styling body elements */ 
@@ -192,6 +191,7 @@ body {
     display: block;
 }
 
+
 .whitespace {
     padding: 7rem;
 }
@@ -205,7 +205,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color:#583A3E;
- } 
+} 
 
  
 footer .footer-elements {
@@ -281,8 +281,7 @@ footer .footer-nav li:hover {
 }
 
 
-
-/* Desktop version */
+/* DESKTOP VERSION */
 /* Using CSS @media Rule to hide/show elements when screen is more than 700px wide */
 
 @media screen and (min-width: 700px) { 
@@ -311,36 +310,14 @@ footer .footer-nav li:hover {
 
     header hr {
         display: block;
+        width: 90%;
+        border: 0.075rem solid #724c51;
     }
 
 
     .hamburger {
         display: none; 
     }
-
-
-    .footer-text {
-        font-size: 1rem;
-        font-family: 'Lato', sans-serif;
-        color: #FFFFFF;
-    }
-
-    footer .footer-elements {
-        flex-direction: row;
-        gap: 10rem; 
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-    }
-
-
-    .arrow {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        padding: 0 2rem 2rem 0;
-    }
-    
 
 
     .intro-text-2 {
@@ -366,7 +343,6 @@ footer .footer-nav li:hover {
     .flex-reverse {
         flex-direction: row-reverse;
         max-width: 55rem;
-    
     }
     
     
@@ -387,9 +363,27 @@ footer .footer-nav li:hover {
         line-height: 3.2rem;
     }
     
-    header hr {
-        display: block;
-        width: 90%;
-        border: 0.075rem solid #724c51;
+
+    .footer-text {
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        color: #FFFFFF;
+    }
+
+
+    footer .footer-elements {
+        flex-direction: row;
+        gap: 10rem; 
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+
+    .arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding: 0 2rem 2rem 0;
     }
 }
