@@ -12,6 +12,7 @@ html {
 }
 
 
+
 /* Mobile version */
 /* Styling header elements */
 
@@ -106,6 +107,7 @@ body {
     line-height: 2.2rem;
     align-self: flex-end;
 }
+
 
 /* controls positioning of images and link-text elements in body */
 .body-page {
@@ -261,7 +263,6 @@ footer .footer-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
 }
 
 
@@ -303,7 +304,7 @@ footer .footer-nav li:hover {
 
 
     header nav {
-        display: block; /* block betyr at den vises i desktop, men ikke mobil */
+        display: block; 
         transform: translateY(-0.5rem);
     }
 
@@ -314,7 +315,7 @@ footer .footer-nav li:hover {
 
 
     .hamburger {
-        display: none; /* none betyr at den ikke vises i dekstop, men på mobil */
+        display: none; 
     }
 
 
